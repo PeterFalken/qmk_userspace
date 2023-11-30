@@ -1,4 +1,19 @@
 {
     "userspace_version": "1.0",
-    "build_targets": []
+    "build_targets": [
+        ["adafruit/macropad", "default"],
+        ["adafruit/macropad", "peterfalken"],
+        ["planck/rev6_drop", "default"],
+        ["planck/rev6_drop", "peterfalken"],
+        ["planck/rev7", "default"],
+        ["planck/rev7", "peterfalken"],
+        ["preonic/rev3_drop", "default"],
+        ["preonic/rev3_drop", "peterfalken"],
+        ["system76/launch_1", "default"],
+        ["system76/launch_1", "peterfalken"],
+        ["work_louder/micro", "default"],
+        ["work_louder/micro", "peterfalken"],
+        ["work_louder/work_board", "default"],
+        ["work_louder/work_board", "peterfalken"],
+    ]
 }
