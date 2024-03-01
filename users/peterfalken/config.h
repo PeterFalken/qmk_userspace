@@ -21,3 +21,7 @@
 // Disable animations for RGB underglow & key matrix
 #define DISABLE_RGB_LIGHT_ANIMATIONS
 #define DISABLE_RGB_MATRIX_ANIMATIONS
+
+// Disable LED/RGB matrix when suspended
+#define LED_MATRIX_SLEEP
+#define RGB_MATRIX_SLEEP
