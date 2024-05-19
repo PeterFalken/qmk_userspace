@@ -15,7 +15,8 @@
 
 // Custom definitions for keys
 #define CK_CW  CW_TOGG     // CAPS_WORD for Caps Word feature
-#define CK_SLP KC_SLEP     // System Sleep
+// #define CK_SLP KC_SLEP     // System Sleep
+#define CK_LSC C(G(KC_Q))  // Lock Screen - macOS
 #define CK_M1  C(KC_DOWN)  // Mission Control - One apps
 #define CK_CO  KC_COPY     // COPY = CMD + C
 #define CK_CU  KC_CUT      // CUT = CMD + X
