@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   |     SHIFT      |   Z    |   X    |   C    |   V    |   B    |   N    |   M    |   ,    |    .   |   /    |   SHIFT    |   UP   |
   |________________|________|________|________|________|________|________|________|________|________|________|____________|________|________
   |            |        |       |        |                 |                 |        |        |             |   |        |        |        |
-  |    MO.1    |  RCTL  |  LALT |  LGUI  |      SPACE      |      SPACE      |  RGUI  |  RALT  |    RCTRL    |   |  LEFT  |  DOWN  | RIGHT  |
+  |    MO.1    |  LCTL  |  LALT |  LGUI  |      SPACE      |      SPACE      |  RGUI  |  RALT  |    RCTRL    |   |  LEFT  |  DOWN  | RIGHT  |
   |____________|________|_______|________|_________________|_________________|________|________|_____________|   |________|________|________|
    */
 
@@ -63,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_LOWER] = LAYOUT(
         KC_TRNS,  KC_TRNS,   CK_M1, KC_MCTL, KC_LPAD, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   KC_MPLY,
         TO(0),      TO(1),   TO(2),   TO(3), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RGB_TOG, RGB_VAD, RGB_VAI, KC_TRNS,   KC_VOLU,
-        KC_PSCR,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_TRNS, KC_TRNS, KC_TRNS, CK_SLP,  KC_VOLD,
+        KC_PSCR,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_TRNS, KC_TRNS, KC_TRNS, CK_LSC,  KC_VOLD,
             KC_TRNS,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TRNS, KC_TRNS, KC_TRNS,         KC_MUTE,
             KC_TRNS,   KC_TRNS,    CK_CU,    CK_CO,    CK_PA,  CK_MV, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,     KC_TRNS,   KC_PGUP,
             KC_TRNS,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,        KC_TRNS, KC_TRNS,    TO(0),           KC_HOME, KC_PGDN, KC_END
