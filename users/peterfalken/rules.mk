@@ -9,7 +9,7 @@ GRAVE_ESC_ENABLE = no		# Won't use for now
 MAGIC_ENABLE = no			# Won't use for now
 MOUSEKEY_ENABLE = no		# Won't use for now
 RAW_ENABLE = no				# Disable raw HID commands
-RGBLIGHT_ENABLE = no		# Disable RGB underglow
+# RGBLIGHT_ENABLE = no		# Disable RGB underglow
 SPACE_CADET_ENABLE = no		# Free up space
 
 # Disable the Audio feature
