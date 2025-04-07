@@ -25,3 +25,6 @@
 // Disable LED/RGB matrix when suspended
 #define LED_MATRIX_SLEEP
 #define RGB_MATRIX_SLEEP
+
+// Set BACKLIGT Status to off as default
+#define BACKLIGHT_DEFAULT_ON false
