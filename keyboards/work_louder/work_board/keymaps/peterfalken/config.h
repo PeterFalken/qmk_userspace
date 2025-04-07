@@ -3,6 +3,4 @@
 
 #pragma once
 
-#define CUSTOM_KEYMAP_LAYERS
-#define CUSTOM_LAYER_STATE
 #define BACKLIGHT_DEFAULT_ON false
