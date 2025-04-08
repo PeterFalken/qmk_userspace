@@ -12,6 +12,9 @@ RAW_ENABLE = no				# Disable raw HID commands
 RGBLIGHT_ENABLE = no		# Disable RGB underglow
 SPACE_CADET_ENABLE = no		# Free up space
 
+# Disable the Audio feature
+ MUSIC_ENABLE = no
+
 # Enable Link Time Optimizations
 LTO_ENABLE = yes
 
