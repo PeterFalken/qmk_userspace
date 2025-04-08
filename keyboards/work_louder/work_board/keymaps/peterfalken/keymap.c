@@ -86,3 +86,42 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [_ADJUST]   = { { _______, _______ } },
 };
 #endif  // ENCODER_ENABLE
+
+
+// Misc. LED functions
+void work_louder_work_board_led_1_on(void) {
+    gpio_set_pin_output(WORK_LOUDER_LED_PIN_1);
+    gpio_write_pin(WORK_LOUDER_LED_PIN_1, true);
+}
+void work_louder_work_board_led_2_on(void) {
+    gpio_set_pin_output(WORK_LOUDER_LED_PIN_2);
+    gpio_write_pin(WORK_LOUDER_LED_PIN_2, true);
+}
+void work_louder_work_board_led_3_on(void) {
+    gpio_set_pin_output(WORK_LOUDER_LED_PIN_3);
+    gpio_write_pin(WORK_LOUDER_LED_PIN_3, true);
+}
+
+void work_louder_work_board_led_1_off(void) {
+    gpio_set_pin_input(WORK_LOUDER_LED_PIN_1);
+    gpio_write_pin(WORK_LOUDER_LED_PIN_1, false);
+}
+void work_louder_work_board_led_2_off(void) {
+    gpio_set_pin_input(WORK_LOUDER_LED_PIN_2);
+    gpio_write_pin(WORK_LOUDER_LED_PIN_2, false);
+}
+void work_louder_work_board_led_3_off(void) {
+    gpio_set_pin_input(WORK_LOUDER_LED_PIN_3);
+    gpio_write_pin(WORK_LOUDER_LED_PIN_3, false);
+}
+
+// Custom layer_state indicator
+layer_state_t layer_state_set_user(layer_state_t state) {
+    // Get layer as number from tri_layer_state(
+    int layer = update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);
+    // Toggle leds based on binary layer number [1  2  3]
+    layer & 0x04 ? work_louder_work_board_led_3_on(): work_louder_work_board_led_3_off();
+    layer & 0x02 ? work_louder_work_board_led_2_on(): work_louder_work_board_led_2_off();
+    layer & 0x01 ? work_louder_work_board_led_1_on(): work_louder_work_board_led_1_off();
+    return layer;
+}
