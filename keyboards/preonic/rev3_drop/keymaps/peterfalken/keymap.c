@@ -1,7 +1,7 @@
 // Copyright 2023 Peter.Falken (@PeterFalken)
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include "muse.h"
+// #include "muse.h"
 #include "peterfalken.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
